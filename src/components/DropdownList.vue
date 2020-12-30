@@ -38,7 +38,7 @@ export default {
         border-radius: 3px;
         overflow: scroll;
         padding: 16px 32px 16px 16px !important;
-        max-height: 180px;
+        max-height: 220px;
     }
     .dropdown-item {
         width:100%;
