@@ -18,7 +18,7 @@
                     ref="query"
                     type="text"
                     class="query-input"
-                    :class="!isKeywordEntered? 'd-none' : 'd-inline'"
+                    :class="!isKeywordEntered? 'd-none' : 'd-inline-block'"
                     v-model="typing"
                     @input="handleQuery"
                     @keydown.delete="handleDelete"
@@ -156,6 +156,7 @@ export default {
     }
     .query-input{
         width: fit-content;
+        max-width:100px
     }
     input:focus {
         outline: none;
@@ -165,5 +166,6 @@ export default {
     }
     .dropdown-list {
         justify-content: start;
+        padding: 0 60px;
     }
 </style>
